@@ -5,8 +5,6 @@
  */
 package accounting;
 
-import javax.swing.JFrame;
-
 /**
  *
  * @author dkdks
@@ -75,7 +73,7 @@ public class entry extends javax.swing.JPanel {
         frame obj=new frame();
         obj.global_frame.getContentPane().removeAll();
         obj.global_frame.getContentPane().add(new home());
-        obj.global_frame.setVisible(true);
+        
         //JPanel setVisible(false);
         
     }//GEN-LAST:event_jButton1ActionPerformed

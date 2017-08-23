@@ -23,7 +23,7 @@ public class Accounting {
     }
     
 }
-class frame{
+ class frame{
     JFrame global_frame=new JFrame();
     frame(){
         global_frame.setResizable(false);

@@ -85,9 +85,6 @@
               </Border>
             </Property>
           </Properties>
-          <BindingProperties>
-            <BindingProperty name="background" source="jLabel1" sourcePath="" target="jLabel1" targetPath="background" updateStrategy="0" immediately="false"/>
-          </BindingProperties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jLabel1MouseClicked"/>
           </Events>

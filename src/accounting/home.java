@@ -12,7 +12,7 @@ import java.awt.event.MouseEvent;
  *
  * @author dkdks
  */
-public class home extends javax.swing.JPanel {
+public class home extends frame {
 
     /**
      * Creates new form home
@@ -26,9 +26,10 @@ public class home extends javax.swing.JPanel {
     {  
        // you can open a new frame here as
        // i have assumed you have declared "frame" as instance variable
-      frame ob=new frame();
-      ob.global_frame.getContentPane().removeAll();
-      ob.global_frame.getContentPane().add(new sale());
+      //frame ob=new frame();
+      global_frame.getContentPane().removeAll();
+      global_frame.getContentPane().add(new sale());
+      global_frame.setVisible(true);
 
     }  
 });

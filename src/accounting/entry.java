@@ -9,7 +9,7 @@ package accounting;
  *
  * @author dkdks
  */
-public class entry extends javax.swing.JPanel {
+public class entry extends frame {
 
     /**
      * Creates new form entry
@@ -70,9 +70,10 @@ public class entry extends javax.swing.JPanel {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        frame obj=new frame();
-        obj.global_frame.getContentPane().removeAll();
-        obj.global_frame.getContentPane().add(new home());
+        
+        global_frame.getContentPane().removeAll();
+        global_frame.getContentPane().add(new home());
+        global_frame.setVisible(true);
         
         //JPanel setVisible(false);
         

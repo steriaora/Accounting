@@ -9,27 +9,28 @@ import javax.swing.JFrame;
 
 /**   
  *
- * @author dkdks
+ * @author dkdks,harsh,abhishek
  */
-public class Accounting {
+public class Accounting extends frame {
   
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
-      
-        new frame();
+      frame obj=new frame();
+      obj.fn();
+        
     }
     
 }
- class frame{
-    JFrame global_frame=new JFrame();
-    frame(){
-        global_frame.setResizable(false);
+ class frame extends javax.swing.JPanel{
+     static JFrame global_frame=new JFrame();
+   void fn(){
+         global_frame.setResizable(false);
         global_frame.setSize(1360, 730);
         global_frame.getContentPane().add(new entry());
         global_frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         global_frame.setVisible(true);
-    }
+   }
 }

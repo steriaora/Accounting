@@ -9,12 +9,12 @@ package accounting;
  *
  * @author dkdks
  */
-public class sale extends javax.swing.JPanel {
+public class purchase extends javax.swing.JPanel {
 
     /**
-     * Creates new form sale
+     * Creates new form purchase
      */
-    public sale() {
+    public purchase() {
         initComponents();
     }
 
@@ -31,24 +31,24 @@ public class sale extends javax.swing.JPanel {
 
         jLabel1.setFont(new java.awt.Font("Imprint MT Shadow", 0, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(102, 0, 0));
-        jLabel1.setText("SALE");
+        jLabel1.setText("PURCHASE");
         jLabel1.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(51, 51, 0)), javax.swing.BorderFactory.createEtchedBorder()));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(623, 623, 623)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(614, Short.MAX_VALUE)
                 .addComponent(jLabel1)
-                .addContainerGap(674, Short.MAX_VALUE))
+                .addGap(605, 605, 605))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(71, 71, 71)
+                .addGap(91, 91, 91)
                 .addComponent(jLabel1)
-                .addContainerGap(624, Short.MAX_VALUE))
+                .addContainerGap(604, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

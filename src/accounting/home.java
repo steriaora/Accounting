@@ -5,6 +5,7 @@
  */
 package accounting;
 
+import java.awt.Color;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
@@ -14,11 +15,14 @@ import java.awt.event.MouseEvent;
  */
 public class home extends frame {
 
+    
     /**
      * Creates new form home
      */
     public home() {
         initComponents();
+        
+        
         
           jLabel1.addMouseListener(new MouseAdapter()  
 {  
@@ -33,6 +37,77 @@ public class home extends frame {
 
     }  
 });
+          
+          jLabel2.addMouseListener(new MouseAdapter()  
+{  
+    public void mouseClicked(MouseEvent e1)  
+    {  
+       // you can open a new frame here as
+       // i have assumed you have declared "frame" as instance variable
+      //frame ob=new frame();
+      global_frame.getContentPane().removeAll();
+      global_frame.getContentPane().add(new purchase());
+      global_frame.setVisible(true);
+
+    }  
+});
+          
+          jLabel1.addMouseListener(new MouseAdapter()  
+{  
+    public void mouseClicked(MouseEvent e)  
+    {  
+       // you can open a new frame here as
+       // i have assumed you have declared "frame" as instance variable
+      //frame ob=new frame();
+      global_frame.getContentPane().removeAll();
+      global_frame.getContentPane().add(new sale());
+      global_frame.setVisible(true);
+
+    }  
+});
+          
+          jLabel3.addMouseListener(new MouseAdapter()  
+{  
+    public void mouseClicked(MouseEvent e2)  
+    {  
+       // you can open a new frame here as
+       // i have assumed you have declared "frame" as instance variable
+      //frame ob=new frame();
+      global_frame.getContentPane().removeAll();
+      global_frame.getContentPane().add(new acconuts());
+      global_frame.setVisible(true);
+
+    }  
+});
+          
+          jLabel4.addMouseListener(new MouseAdapter()  
+{  
+    public void mouseClicked(MouseEvent e3)  
+    {  
+       // you can open a new frame here as
+       // i have assumed you have declared "frame" as instance variable
+      //frame ob=new frame();
+      global_frame.getContentPane().removeAll();
+      global_frame.getContentPane().add(new stock());
+      global_frame.setVisible(true);
+
+    }  
+});
+          
+          jLabel5.addMouseListener(new MouseAdapter()  
+{  
+    public void mouseClicked(MouseEvent e4)  
+    {  
+       // you can open a new frame here as
+       // i have assumed you have declared "frame" as instance variable
+      //frame ob=new frame();
+      global_frame.getContentPane().removeAll();
+      global_frame.getContentPane().add(new return1());
+      global_frame.setVisible(true);
+
+    }  
+});
+          
     }
 
   
@@ -47,6 +122,10 @@ public class home extends frame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
 
         setBackground(new java.awt.Color(255, 255, 255));
@@ -54,6 +133,7 @@ public class home extends frame {
 
         jPanel1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
 
+        jLabel1.setBackground(new java.awt.Color(204, 0, 0));
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel1.setText("                                  SALES");
         jLabel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -63,18 +143,46 @@ public class home extends frame {
             }
         });
 
+        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel2.setText("                               PURCHASE");
+        jLabel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel3.setText("                               ACCOUNTS          ");
+        jLabel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel4.setText("                                 STOCK");
+        jLabel4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        jLabel5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel5.setText("                                RETURN");
+        jLabel5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 321, Short.MAX_VALUE)
+            .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, 321, Short.MAX_VALUE)
+            .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(111, 111, 111)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(492, Short.MAX_VALUE))
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(30, 30, 30)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(31, 31, 31)
+                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(31, 31, 31)
+                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(31, 31, 31)
+                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(242, Short.MAX_VALUE))
         );
 
         jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -119,6 +227,10 @@ public class home extends frame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables

@@ -185,7 +185,7 @@ public class home extends frame {
 
         jLabel6.setBackground(new java.awt.Color(204, 0, 0));
         jLabel6.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel6.setText("                                  LEDGER");
+        jLabel6.setText("                                 LEDGER");
         jLabel6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jLabel6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {

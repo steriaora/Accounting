@@ -29,7 +29,7 @@ public class Accounting extends frame {
    void fn(){
          global_frame.setResizable(false);
         global_frame.setSize(1360, 730);
-        global_frame.getContentPane().add(new entry());
+        global_frame.getContentPane().add(new login());
         global_frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         global_frame.setVisible(true);
    }

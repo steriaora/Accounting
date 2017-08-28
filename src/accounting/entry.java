@@ -78,6 +78,12 @@ public class entry extends frame {
         jLabel5.setText("Password *");
         add(jLabel5);
         jLabel5.setBounds(560, 280, 80, 14);
+
+        jPasswordField2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jPasswordField2ActionPerformed(evt);
+            }
+        });
         add(jPasswordField2);
         jPasswordField2.setBounds(560, 300, 243, 20);
 
@@ -116,6 +122,10 @@ public class entry extends frame {
         //JPanel setVisible(false);
         
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jPasswordField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jPasswordField2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPasswordField2ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
